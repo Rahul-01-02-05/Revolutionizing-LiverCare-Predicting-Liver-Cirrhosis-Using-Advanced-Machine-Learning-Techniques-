@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liver Cirrhosis Prediction</title>
+</head>
+<body>
+    <h2>🧠 Liver Disease Predictor</h2>
+    <form action="/predict" method="post">
+        Age: <input type="number" name="age" step="any" required><br>
+        Gender (0=Female, 1=Male): <input type="number" name="gender" step="any" required><br>
+        Total Bilirubin: <input type="number" name="tb" step="any" required><br>
+        Direct Bilirubin: <input type="number" name="db" step="any" required><br>
+        Alkaline Phosphatase: <input type="number" name="ap" step="any" required><br>
+        Alamine Aminotransferase: <input type="number" name="aa" step="any" required><br>
+        Aspartate Aminotransferase: <input type="number" name="asa" step="any" required><br>
+        Total Proteins: <input type="number" name="tp" step="any" required><br>
+        Albumin: <input type="number" name="alb" step="any" required><br>
+        Albumin & Globulin Ratio: <input type="number" name="agr" step="any" required><br>
+        <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
